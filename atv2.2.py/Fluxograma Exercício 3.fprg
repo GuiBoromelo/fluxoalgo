@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="renan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-11 09:34:47 "/>
+        <attribute name="created" value="cmVuYW47REVTS1RPUC1MTTJVTUFQOzIwMjItMDQtMjQ7IjA4OjM4OjMyICI7MjgyMA=="/>
+        <attribute name="edited" value="cmVuYW47REVTS1RPUC1MTTJVTUFQOzIwMjItMDUtMTE7IjA5OjM0OjQ3ICI7MzsyOTMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altura" type="Real" array="False" size=""/>
+            <declare name="peso" type="Real" array="False" size=""/>
+            <output expression="&quot;Entre com a sua altura:&quot;" newline="True"/>
+            <input variable="altura"/>
+            <output expression="&quot;Entre com o seu peso em Kg:&quot;" newline="True"/>
+            <input variable="peso"/>
+            <if expression="altura &lt; 1.20 and peso &lt; 60">
+                <then>
+                    <output expression="&quot;Classifica&#231;&#227;o A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="altura &lt; 1.20 and peso &gt; 60 and peso &lt;= 90">
+                        <then>
+                            <output expression="&quot;Classifica&#231;&#227;o D&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="altura &lt; 1.20 and peso &gt; 90">
+                                <then>
+                                    <output expression="&quot;Classifica&#231;&#227;o G&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="altura &gt;= 1.20 and altura &lt;= 1.70 and peso &lt; 60">
+                                        <then>
+                                            <output expression="&quot;Classifica&#231;&#227;o B&quot;" newline="False"/>
+                                        </then>
+                                        <else>
+                                            <if expression="altura &gt;= 1.20 and altura &lt;= 1.70 and peso &gt; 60 and peso &lt;= 90">
+                                                <then>
+                                                    <output expression="&quot;Classifica&#231;&#227;o E&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="altura &gt;= 1.20 and altura &lt;= 1.70 and peso &gt; 90">
+                                                        <then>
+                                                            <output expression="&quot;Classifica&#231;&#227;o H&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="altura &gt; 1.70 and peso &lt; 60">
+                                                                <then>
+                                                                    <output expression="&quot;Classifica&#231;&#227;o C&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="altura &gt; 1.70 and peso &gt; 60 and peso &lt;= 90">
+                                                                        <then>
+                                                                            <output expression="&quot;Classifica&#231;&#227;o F&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="altura &gt;&#160;1.70 and peso &gt; 90">
+                                                                                <then>
+                                                                                    <output expression="&quot;Classifica&#231;&#227;o i&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;N&#227;o existe uma classifica&#231;&#227;o que se encaixe com as suas informa&#231;&#245;es&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

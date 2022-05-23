@@ -1,0 +1,36 @@
+﻿Função Principal
+    Definir Real media
+    
+    Atribuir media = 0
+    Definir Inteiro x
+    
+    Atribuir x = 1
+    Definir Real nota
+    
+    Enquanto x <= 3
+        Saída "Digite a sua "
+        Saída x
+        Saída "° Nota:"
+        Entrada nota
+        Atribuir media = media + nota
+        Atribuir x = x + 1
+    Fim
+    Atribuir media = media / 3
+    Se media >= 7
+        Saída "Média Final: "
+        Saída media
+        Saída " APROVADO(a)"
+    Falso:
+        Se media <= 3
+            Saída "Média Final: "
+            Saída media
+            Saída " REPROVADO(a)"
+        Falso:
+            Saída "Média Final: "
+            Saída media
+            Saída " EXAME, você precisa tirar "
+            Saída 6 - media
+            Saída " para passar."
+        Fim
+    Fim
+Fim

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="renan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-12 12:49:35 "/>
+        <attribute name="created" value="cmVuYW47REVTS1RPUC1MTTJVTUFQOzIwMjItMDUtMTE7IjA5OjIzOjIwICI7MjgwOQ=="/>
+        <attribute name="edited" value="cmVuYW47REVTS1RPUC1MTTJVTUFQOzIwMjItMDUtMTE7IjA5OjMxOjIxICI7MTsyOTE3"/>
+        <attribute name="edited" value="R1VJO0RFU0tUT1AtUjdKQjFNMTsyMDIyLTA1LTEyOyIxMjo0OTozNSAiOzI7MjU2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="0"/>
+            <declare name="g" type="Integer" array="False" size=""/>
+            <assign variable="g" expression="1"/>
+            <declare name="nota" type="Real" array="False" size=""/>
+            <while expression="g &lt;= 3">
+                <output expression="&quot;Entre com a sua &quot;" newline="False"/>
+                <output expression="g" newline="False"/>
+                <output expression="&quot;&#176; Nota:&quot;" newline="True"/>
+                <input variable="nota"/>
+                <assign variable="media" expression="media + nota"/>
+                <assign variable="g" expression="g + 1"/>
+            </while>
+            <assign variable="media" expression="media / 3"/>
+            <if expression="media &gt;= 6">
+                <then>
+                    <output expression="&quot;M&#233;dia Final: &quot;" newline="False"/>
+                    <output expression="media" newline="False"/>
+                    <output expression="&quot; APROVADO(a)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &lt;= 3">
+                        <then>
+                            <output expression="&quot;M&#233;dia Final: &quot;" newline="False"/>
+                            <output expression="media" newline="False"/>
+                            <output expression="&quot; REPROVADO(a)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;M&#233;dia Final: &quot;" newline="False"/>
+                            <output expression="media" newline="False"/>
+                            <output expression="&quot; EXAME, voc&#234; precisa tirar &quot;" newline="False"/>
+                            <output expression="6 - media" newline="False"/>
+                            <output expression="&quot; para ser aprovado.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+﻿Função Principal
+    Definir Inteiro idade
+    
+    Saída "Entre com a sua idade para ver sua categoria:"
+    Entrada idade
+    Se idade > 30
+        Saída "Categoria: Sênior"
+    Falso:
+        Se idade >= 16
+            Saída "Categoria: Adulto(a)"
+        Falso:
+            Se idade >= 11
+                Saída "Categoria: Adolescente"
+            Falso:
+                Se idade >= 8
+                    Saída "Categoria: Juvenil"
+                Falso:
+                    Se idade >= 5
+                        Saída "Categoria: Infantil"
+                    Falso:
+                        Saída "Não existe uma categoria referente à sua idade"
+                    Fim
+                Fim
+            Fim
+        Fim
+    Fim
+Fim

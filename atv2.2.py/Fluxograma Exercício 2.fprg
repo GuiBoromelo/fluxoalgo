@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="renan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-11 09:33:20 "/>
+        <attribute name="created" value="cmVuYW47REVTS1RPUC1MTTJVTUFQOzIwMjItMDUtMTE7IjA4OjI5OjE3ICI7MjgyMA=="/>
+        <attribute name="edited" value="cmVuYW47REVTS1RPUC1MTTJVTUFQOzIwMjItMDUtMTE7IjA5OjMzOjIwICI7NTsyOTIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com a sua idade para ver sua categoria:&quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade &gt; 30">
+                <then>
+                    <output expression="&quot;Categoria: S&#234;nior&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade &gt;= 16">
+                        <then>
+                            <output expression="&quot;Categoria: Adulto(a)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="idade &gt;= 11">
+                                <then>
+                                    <output expression="&quot;Categoria: Adolescente&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="idade &gt;= 8">
+                                        <then>
+                                            <output expression="&quot;Categoria: Juvenil&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="idade &gt;= 5">
+                                                <then>
+                                                    <output expression="&quot;Categoria: Infantil&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;N&#227;o existe uma categoria referente &#224; sua idade&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
